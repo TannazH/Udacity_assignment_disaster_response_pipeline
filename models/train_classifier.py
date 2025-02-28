@@ -220,34 +220,10 @@ def main():
     else:
         print('Please provide the filepath of the disaster messages database '\
               'as the first argument and the filepath of the pickle file to '\
-              'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
-
+              'save the model to as the second argument and the filepath to the csv file for the evaluation matrix.'\
+              '. \n\nExample: python '\
+              'models/train_classifier.py data/DisasterResponse.db models/classifier.pkl models/evaluation_matrix.csv')
+        
 if __name__ == '__main__':
     main()
-    database_filepath = "./data/DisasterResponse.db"
-    model_filepath = "./models/classifier_randomforest.pkl"
-    evaluation_filepath = "./models/evaluation_matrix.csv"
-    print('Loading data...\n    DATABASE: {}'.format(database_filepath))
-    x_features, y_labels, category_names = load_data_from_database(database_filepath)
-    X_train, X_test, y_train, y_test = train_test_split(x_features, y_labels, test_size=0.2)
-
-    print('Building model...')
-    model = build_model()
-
-    print('Training model...')
-    model.fit(X_train, y_train)
-
-    print('Evaluating model...')
-    evaluation_matrix = evaluate_model(model, X_test, y_test, category_names)
-
-    print('Saving model...\n    model: {}'.format(model_filepath))
-    save_model(model, model_filepath)
-
-    print('Trained model saved!')
-
-    print('Saving evaluation matrix...\n    evaluation matrix: {}'.format(evaluation_filepath))
-    save_evaluation_matrix(evaluation_matrix, evaluation_filepath)
-
-    print('Evaluation matrix saved!')
 
