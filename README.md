@@ -7,17 +7,17 @@
 for using this package 
 1. Create and activate a virtual environment: open your terminal and run the following commands:
 
-    python -m venv myenv
+    python -m venv /path_to_new_virtual_environment (as an example ./.venv)
 
 2. Activate the virtual environment
 
 **Windows:** 
 
-myenv\Scripts\activate
+./.venv/scripts/activate
 
 **macOS and Linux:**
 
-source myenv/bin/activate                                               
+source ./.venv/bin/activate                                               
 
 This repository requires the following Python packages:
 you can run the following command: 
