@@ -77,15 +77,15 @@ The app built to have an ML model to categorize every message received
 3. Go to http://127.0.0.1:3001
    Or Go to http://192.168.178.97:3001
 
-## Screenshots
+## Figures
 
-***Screenshot 1: App taining dataset***
+***Figure 1: App taining dataset***
 ![Screenshot 1](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/tree/main/figures/overview_training_dataset.png)
 
 
-***Screenshot 2: App classification search page***
+***Figure 2: App classification search page***
 ![Screenshot 2](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/tree/main/figures/message_classification.png)
 
 
 ## Licensing, Authors, Acknowledgements
-This app was completed as part of the [Udacity Data Scientist Nanodegree].
+This project was completed as part of the [Udacity Data Scientist Nanodegree].
