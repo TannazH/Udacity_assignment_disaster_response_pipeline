@@ -66,22 +66,10 @@ def tokenize(text) -> list:
         clean_tokens (list): List containing clean tokens.
     """
     text = re.sub(r'[^a-zA-Z0-9]', ' ', text.lower())
-
-    tokens = word_tokenize(text)
-
-    lemmatizer = WordNetLemmatizer()
-
-    clean_tokens = []
-    for tok in tokens:
-
-        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-        clean_tokens.append(clean_tok)
-
-
     stop_words = stopwords.words("english")
-    words = word_tokenize(text)
-    stemmed = [PorterStemmer().stem(w) for w in words]
-    clean_tokens = [WordNetLemmatizer().lemmatize(w) for w in stemmed if w not in stop_words]
+    tokens = word_tokenize(text)
+    clean_tokens = [WordNetLemmatizer().lemmatize(w) for w in tokens if w not in stop_words]
+
     return clean_tokens
 
 def build_model() -> GridSearchCV:
