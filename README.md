@@ -80,12 +80,11 @@ The app built to have an ML model to categorize every message received
 ## Screenshots
 
 ***Screenshot 1: App taining dataset***
-![Screenshot 1](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/figures/overview_training_dataset.png)
-
+![Screenshot 1](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/tree/main/figures/overview_training_dataset.png)
 
 
 ***Screenshot 2: App classification search page***
-![Screenshot 2](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/figures/message_classification.png)
+![Screenshot 2](https://github.com/TannazH/Udacity_assignment_disaster_response_pipeline/tree/main/figures/message_classification.png)
 
 
 ## Licensing, Authors, Acknowledgements
