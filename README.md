@@ -19,8 +19,10 @@ myenv\Scripts\activate
 
 source myenv/bin/activate                                               
 
-This repository requires the following Python packages: 
+This repository requires the following Python packages:
+you can run the following command: 
 
+pip install -r requirements.txt
 
     blinker==1.9.0
     click==8.1.8
@@ -50,7 +52,6 @@ This repository requires the following Python packages:
     typing_extensions==4.12.2
     tzdata==2025.1
     Werkzeug==3.1.3
-
 
 ## Project Overview
 The objective of this assignment is to deign a web app which can be used by emergency operators during a disaster to classify a disaster text messages into several categories which then can be transmited to the responsible entity.
